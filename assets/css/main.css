@@ -3124,6 +3124,10 @@
 				padding-left: 0;
 			}
 
+			#four ul {
+				animation-timing-function: ease-in;
+			}
+
 			.project-link:hover a {
 				text-decoration: underline;
 			}

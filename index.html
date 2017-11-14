@@ -14,6 +14,8 @@
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/icon_css.css">
+		<link rel="stylesheet" href="assets/css/animations.css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
@@ -44,7 +46,7 @@
 
 					<section id="four">
 						<h2>Skills</h2>
-						<ul>
+						<ul id="skills" class="fadeIn">
 							<i class="devicon-amazonwebservices-plain-wordmark colored devicon"></i>
 							<i class="devicon-atom-original colored devicon"></i>
 							<i class="devicon-html5-plain-wordmark colored devicon"></i>
@@ -106,7 +108,7 @@
 						<p>I went to a doctor-engineer school to study languages and music, I have a job history with a United Nations level of diversity in it, and I have a new love for all things coding. I'm sure we'll find something to talk about.</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								<form method="post" action="#">
+								<form method="post" action="https://formspree.io/max.currier1@gmail.com">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -481,6 +483,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+	$(document).ready(function() {
+		$('#skills').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
 
 	</body>
 </html>

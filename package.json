@@ -1,0 +1,30 @@
+{
+  "name": "mc-portfolio-website",
+  "version": "2.0.0",
+  "description": "Max Currier's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheriffhoodie/portfolio-website.git"
+  },
+  "author": "Max Currier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheriffhoodie/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/sheriffhoodie/portfolio-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "merge-stream": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}

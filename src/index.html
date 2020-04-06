@@ -1,20 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Max Currier</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="images/logo_brownMC.png">
+		<link rel="shortcut icon" href="src/assets/images/mc-logo-favicon.png">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/icon_css.css">
-		<link rel="stylesheet" href="assets/css/animations.css">
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	</head>
 	<body id="top">
@@ -22,7 +15,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<img src="images/profile-pic.png" alt="" />
+					<img src="src/assets/images/profile-pic.png" alt="" />
 					<h1><strong>Hi! I'm Max Currier</strong>,</br> an NYC-based software developer.<br />
 					<br /></h1>
 				</div>
@@ -74,28 +67,22 @@
 						<h2>My Projects</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="images/bandom-screenshot.png" alt="" /></a>
+								<a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="src/assets/images/bandom-screenshot.png" alt="" /></a>
 								<h3>Bandom</h3>
 								<p>A full-stack music-streaming web application inspired by Bandcamp.com</p>
 								<a href="https://github.com/sheriffhoodie/bandom/" target="_blank" class="project-link">See Code</a>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="https://sheriffhoodie.github.io/space-chopper/" target="_blank" class="image fit thumb"><img src="images/spacechopper-screenshot3.png" alt="" /></a>
+								<a href="https://sheriffhoodie.github.io/space-chopper/" target="_blank" class="image fit thumb"><img src="src/assets/images/spacechopper-screenshot3.png" alt="" /></a>
 								<h3>Space Chopper</h3>
 								<p>A browser-based JavaScript game based on the Helicopter classic arcade game</p>
 								<a href="https://github.com/sheriffhoodie/space-chopper" target="_blank" class="project-link">See Code</a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://snack.expo.io/@sheriffhoodie/clefnotes" target="_blank" class="image fit thumb"><img src="images/clefnotes-logo.png" alt="" /></a>
+								<a href="https://snack.expo.io/@sheriffhoodie/clefnotes" target="_blank" class="image fit thumb"><img src="src/assets/images/clefnotes-logo.png" alt="" /></a>
 								<h3>ClefNotes</h3>
 								<p>A simple notes and organization mobile app for private music teachers built using React Native and Google Firebase</p>
 								<a href="https://github.com/sheriffhoodie/clef-notes" target="_blank" class="project-link">See Code</a>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="#" target="_blank" class="image fit thumb"><img src="images/dollasign-screenshot.png" alt="" /></a>
-								<h3>dollaSign</h3>
-								<p>A lightweight JavaScript DOM interaction library inspired by jQuery</p>
-								<a href="https://github.com/sheriffhoodie/dollaSign" target="_blank" class="project-link">See Code</a>
 							</article>
 
 						</div>
@@ -149,30 +136,11 @@
 						<li><a href="https://www.linkedin.com/in/maxcurrier" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 						<li><a href="https://angel.co/maxwell-currier?public_profile=1" target="_blank" class="icon fa-angellist"><span class="label">Angel List</span></a></li>
 					</ul>
-					<ul class="copyright">
-						<li>&copy; MC</li><li>Powered By: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-	$(document).ready(function() {
-		$('#skills').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("fadeIn");
-			}
-		});
-	});
-</script>
 
 	</body>
 </html>

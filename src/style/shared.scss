@@ -1,4 +1,35 @@
 html, body {
-  background: $mainBg;
-  color: $fontColor;
+  background: $primary;
+  color: $fontPrimary;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.main {
+  padding: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img.profile-pic {
+    margin-bottom: 50px;
+  }
+}
+
+.thumb img {
+  width: 500px;
+}
+
+i.devicon {
+  font-size: 75px;
+  margin: 15px 20px;
+  line-height: 1.5;
 }

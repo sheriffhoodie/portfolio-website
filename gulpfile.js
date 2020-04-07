@@ -14,6 +14,7 @@ var concat = require('gulp-concat');
 // ******** Path Definitions ********
 var SOURCE_PATH = './src';
 var BUILD_PATH = './build';
+var SASS_PATH = SOURCE_PATH + '/style/main.scss';
 
 // ******** Core Task Running Functions ********
 // Builds and Watches Files
@@ -44,24 +45,11 @@ function processHTML() {
 
 function processCSS() {
   // Convert all sass to css, then concat
-  // Get all slides
-  var slides = getFolders(BUILD_PATH);
-  // Set a src and dest for each folder
-  slides = slides.map(function(folder) {
-    return {
-      src: path.join(BUILD_PATH, 'presentation', folder, '**/*.scss'),
-      dest: path.join(BUILD_PATH, 'presentation', folder, 'style')
-    }
-  })
-  // Build our array of streams that we will merge
-  var tasks = slides.map(function(path) {
-    return gulp.src(path.src)
-      .pipe(sass().on('error', sass.logError))
-      .pipe(concatCss('bundle.css'))
-      .pipe(gulp.dest(path.dest));
-  })
-  // Return one large stream gulp needs for sync
-  return merge(tasks);
+
+  return gulp.src(SASS_PATH)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concatCss('bundle.css'))
+    .pipe(gulp.dest(path.join(BUILD_PATH, 'style')));
 }
 
 function processJS() {
@@ -71,8 +59,8 @@ function processJS() {
   // Set a src and dest for each folder
   slides = slides.map(function(folder) {
     return {
-      src: path.join(BUILD_PATH, 'presentation', folder, '**/*.js'),
-      dest: path.join(BUILD_PATH, 'presentation', folder, 'js')
+      src: path.join(BUILD_PATH, folder, '**/*.js'),
+      dest: path.join(BUILD_PATH, 'js')
     }
   })
   // Build our array of streams that we will merge
@@ -92,7 +80,7 @@ function cleanBuild() {
 
 function cleanDuplicateFiles() {
   // Clean extraneous scss and css files
-  return del([SHARED_PATH + '/**/*.css', BUILD_PATH + '/**/*.scss', BUILD_PATH + '/**/*.js', '!' + BUILD_PATH + '/**/bundle.js', BUILD_PATH + '/**/*.hogan', BUILD_PATH + '/**/templates'])
+  return del([BUILD_PATH + '/**/*.scss', BUILD_PATH + '/**/*.js', '!' + BUILD_PATH + '/**/bundle.js', BUILD_PATH + '/**/*.hogan', BUILD_PATH + '/**/templates'])
 }
 
 function copySlides() {

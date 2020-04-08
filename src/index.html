@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Max Currier</title>
+	<title>Max Currier | Developer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="shortcut icon" href="assets/images/mc-logo-favicon.png">
@@ -16,79 +16,94 @@
 <body>
 	<div class="main">
 
-		<!-- Header -->
-		<header>
-			<div class="header-inner">
-				<img src="assets/images/profile2.png" class="profile-pic" alt="profile photo" />
-				<h1><span class="language-toggle">Hi!</span><br /> I'm Max.</h1>
+		<nav class="nav-el">
+			<img src="assets/images/nav-logo.png" alt="MC Logo" class="nav-logo">
+			<div class="nav-item-div">
+				<p>About Me</p>
 			</div>
-		</header>
+			<div class="nav-item-div">
+				<p>Skills</p>
+			</div>
+			<div class="nav-item-div">
+				<p>Projects</p>
+			</div>
+			<div class="nav-item-div">
+				<p>Contact</p>
+			</div>
+		</nav>
+
+		<section id="home-page" class="content-page active">
+			<h1><span class="language-toggle">Hi!</span> I'm Max.</h1>
+			<img src="assets/images/home-logo.png" class="home-logo" alt="MC Logo">
+		</section>
+
+		<section id="about-me" class="content-page">
+			<p>Who am I? I am a full-stack software developer with experience making web and mobile applications with Ruby, Rails, PostgreSQL, Javascript, HTML/CSS, React/Redux, React Native, and Google Firebase. I am a Johns Hopkins grad from New Jersey
+				looking to join a great team, engineer great products and make a great impact. I am a part-time suburban farm-boy, most-of-the-time Mets fan (sometimes it gets too painful), and a full-time problem-solver.</br></br>Why coding? One of my
+				lifelong passions has been learning languages, including studying four of them in college and studying abroad. Now I'm taking my talents from the café tables of Paris to the keyboard, getting into as many new coding languages and libraries as I
+				can, and I am loving it.</p>
+
+			<div class="button" data-target="resume">
+				<p>Resume</p><span></span>
+			</div>
+		</section>
+
+		<section id="skills" class="content-page">
+			<h2>Skills</h2>
+			<ul class="fadeIn">
+				<i id="skills" class="devicon-amazonwebservices-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-atom-original-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-html5-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-css3-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-sass-original colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-bootstrap-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-git-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-javascript-plain colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-jquery-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-python-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-django-plain colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-postgresql-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-rails-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-ruby-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-react-original-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-heroku-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-babel-plain colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-slack-plain-wordmark colored devicon fadeIn"></i>
+				<i id="skills" class="devicon-webpack-plain-wordmark colored devicon fadeIn"></i>
+			</ul>
+		</section>
+
+		<section id="projects" class="content-page">
+			<h2>My Projects</h2>
+			<div class="row">
+				<article class="6u 12u$(xsmall) work-item">
+					<a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="assets/images/bandom-screenshot.png" alt="" /></a>
+					<h3>Bandom</h3>
+					<p>A full-stack music-streaming web application inspired by Bandcamp.com</p>
+					<a href="https://github.com/sheriffhoodie/bandom/" target="_blank" class="project-link">See Code</a>
+				</article>
+				<article class="6u$ 12u$(xsmall) work-item">
+					<a href="https://sheriffhoodie.github.io/space-chopper/" target="_blank" class="image fit thumb"><img src="assets/images/spacechopper-screenshot3.png" alt="" /></a>
+					<h3>Space Chopper</h3>
+					<p>A browser-based JavaScript game based on the Helicopter classic arcade game</p>
+					<a href="https://github.com/sheriffhoodie/space-chopper" target="_blank" class="project-link">See Code</a>
+				</article>
+				<article class="6u 12u$(xsmall) work-item">
+					<a href="https://snack.expo.io/@sheriffhoodie/clefnotes" target="_blank" class="image fit thumb"><img src="assets/images/clefnotes-logo.png" alt="" /></a>
+					<h3>ClefNotes</h3>
+					<p>A simple notes and organization mobile app for private music teachers built using React Native and Google Firebase</p>
+					<a href="https://github.com/sheriffhoodie/clef-notes" target="_blank" class="project-link">See Code</a>
+				</article>
+
+			</div>
+		</section>
+
+		<section id="contact" class="content-page">
+			<h1>Contact Me</h1>
+		</section>
 
 		<!-- Main -->
 		<div class="main-content">
-
-			<!-- One -->
-			<section id="one">
-				<p>Who am I? I am a full-stack software developer with experience making web and mobile applications with Ruby, Rails, PostgreSQL, Javascript, HTML/CSS, React/Redux, React Native, and Google Firebase. I am a Johns Hopkins grad from New Jersey
-					looking to join a great team, engineer great products and make a great impact. I am a part-time suburban farm-boy, most-of-the-time Mets fan (sometimes it gets too painful), and a full-time problem-solver.</br></br>Why coding? One of my
-					lifelong passions has been learning languages, including studying four of them in college and studying abroad. Now I'm taking my talents from the café tables of Paris to the keyboard, getting into as many new coding languages and libraries as I
-					can, and I am loving it.</p>
-
-				<div class="button" data-target="resume">
-					<p>Resume</p><span></span>
-				</div>
-			</section>
-
-			<section id="four">
-				<h2>Skills</h2>
-				<ul class="fadeIn">
-					<i id="skills" class="devicon-amazonwebservices-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-atom-original-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-html5-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-css3-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-sass-original colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-bootstrap-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-git-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-javascript-plain colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-jquery-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-python-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-django-plain colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-postgresql-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-rails-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-ruby-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-react-original-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-heroku-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-babel-plain colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-slack-plain-wordmark colored devicon fadeIn"></i>
-					<i id="skills" class="devicon-webpack-plain-wordmark colored devicon fadeIn"></i>
-				</ul>
-			</section>
-
-			<!-- Two -->
-			<section id="two">
-				<h2>My Projects</h2>
-				<div class="row">
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="assets/images/bandom-screenshot.png" alt="" /></a>
-						<h3>Bandom</h3>
-						<p>A full-stack music-streaming web application inspired by Bandcamp.com</p>
-						<a href="https://github.com/sheriffhoodie/bandom/" target="_blank" class="project-link">See Code</a>
-					</article>
-					<article class="6u$ 12u$(xsmall) work-item">
-						<a href="https://sheriffhoodie.github.io/space-chopper/" target="_blank" class="image fit thumb"><img src="assets/images/spacechopper-screenshot3.png" alt="" /></a>
-						<h3>Space Chopper</h3>
-						<p>A browser-based JavaScript game based on the Helicopter classic arcade game</p>
-						<a href="https://github.com/sheriffhoodie/space-chopper" target="_blank" class="project-link">See Code</a>
-					</article>
-					<article class="6u 12u$(xsmall) work-item">
-						<a href="https://snack.expo.io/@sheriffhoodie/clefnotes" target="_blank" class="image fit thumb"><img src="assets/images/clefnotes-logo.png" alt="" /></a>
-						<h3>ClefNotes</h3>
-						<p>A simple notes and organization mobile app for private music teachers built using React Native and Google Firebase</p>
-						<a href="https://github.com/sheriffhoodie/clef-notes" target="_blank" class="project-link">See Code</a>
-					</article>
-
-				</div>
-			</section>
 
 		</div>
 

@@ -6,7 +6,17 @@
 
 // Components
 @import
-'./components/button';
+'./components/button',
+'./components/nav';
 
+// Pages
+@import
+'./pages/home-page',
+'./pages/about-me',
+'./pages/skills',
+'./pages/projects',
+'./pages/contact';
+
+// Shared Styling
 @import
 './shared';

@@ -1,0 +1,31 @@
+nav.nav-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  border-right: 2px solid $fontPrimary;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 150px 0;
+
+  .nav-logo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-item-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    p {
+      color: $accentLight;
+      font-weight: 700;
+    }
+  }
+}

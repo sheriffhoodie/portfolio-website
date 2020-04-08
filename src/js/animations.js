@@ -35,10 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     BUTTONS[i].addEventListener('mouseenter', function(e) {
       animateButton(this, e);
+      gsap.to(this, { duration: 0.3, borderColor: '#fffcf4', delay: 0.3 });
     });
 
     BUTTONS[i].addEventListener('mouseleave', function(e) {
       animateButton(this, e);
+      gsap.to(this, { duration: 0.3, borderColor: '#0176a7', delay: 0.1 });
     });
   }
 });

@@ -3,33 +3,30 @@ html, body {
   color: $fontPrimary;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .main {
   padding: 50px;
+  height: 100%;
+  padding-left: $nav-width;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.content-page {
+  display: none;
+  opacity: 0;
 
-  img.profile-pic {
-    margin-bottom: 50px;
+  &.active {
+    display: block;
+    opacity: 1;
   }
 }
 
 .thumb img {
   width: 500px;
-}
-
-i.devicon {
-  font-size: 75px;
-  margin: 15px 20px;
-  line-height: 1.5;
 }

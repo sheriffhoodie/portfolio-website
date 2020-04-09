@@ -1,0 +1,4 @@
+<section id="home-page" class="content-page active">
+  <h1><span class="language-toggle">Hi!</span> I'm Max.</h1>
+  <img src="assets/images/home-logo.png" class="home-logo" alt="MC Logo">
+</section>

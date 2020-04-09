@@ -1,0 +1,15 @@
+<nav class="nav-el">
+  <img src="assets/images/nav-logo.png" alt="MC Logo" class="nav-logo" data-link="home-page"/>
+  <div class="nav-item-div" data-link="about-me">
+    <p>About Me</p>
+  </div>
+  <div class="nav-item-div" data-link="skills">
+    <p>Skills</p>
+  </div>
+  <div class="nav-item-div" data-link="projects">
+    <p>Projects</p>
+  </div>
+  <div class="nav-item-div" data-link="contact">
+    <p>Contact</p>
+  </div>
+</nav>

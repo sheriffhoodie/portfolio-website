@@ -1,0 +1,24 @@
+<section id="projects" class="content-page">
+  <h2>My Projects</h2>
+  <div class="row">
+    <article class="6u 12u$(xsmall) work-item">
+      <a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="assets/images/bandom-screenshot.png" alt="" /></a>
+      <h3>Bandom</h3>
+      <p>A full-stack music-streaming web application inspired by Bandcamp.com</p>
+      <a href="https://github.com/sheriffhoodie/bandom/" target="_blank" class="project-link">See Code</a>
+    </article>
+    <article class="6u$ 12u$(xsmall) work-item">
+      <a href="https://sheriffhoodie.github.io/space-chopper/" target="_blank" class="image fit thumb"><img src="assets/images/spacechopper-screenshot3.png" alt="" /></a>
+      <h3>Space Chopper</h3>
+      <p>A browser-based JavaScript game based on the Helicopter classic arcade game</p>
+      <a href="https://github.com/sheriffhoodie/space-chopper" target="_blank" class="project-link">See Code</a>
+    </article>
+    <article class="6u 12u$(xsmall) work-item">
+      <a href="https://snack.expo.io/@sheriffhoodie/clefnotes" target="_blank" class="image fit thumb"><img src="assets/images/clefnotes-logo.png" alt="" /></a>
+      <h3>ClefNotes</h3>
+      <p>A simple notes and organization mobile app for private music teachers built using React Native and Google Firebase</p>
+      <a href="https://github.com/sheriffhoodie/clef-notes" target="_blank" class="project-link">See Code</a>
+    </article>
+
+  </div>
+</section>

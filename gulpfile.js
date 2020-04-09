@@ -8,6 +8,7 @@ var gulpSequence = require('gulp-sequence');
 var merge = require('merge-stream');
 var browserSync = require('browser-sync').create();
 // ******** Post Processing Dependencies ********
+var hogan = require('gulp-hogan');
 var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
@@ -39,7 +40,8 @@ function serve(callback) {
 }
 
 function processHTML() {
-  return gulp.src('src/**/*.html', {}, '.html')
+  return gulp.src('src/**/*.hogan', {}, '.html')
+    .pipe(hogan(null, null, '.html'))
     .pipe(gulp.dest('build'))
 };
 

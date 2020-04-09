@@ -8,7 +8,7 @@ nav.nav-el {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 150px 0;
+  padding: 200px 0;
 
   .nav-logo {
     width: 100%;
@@ -21,10 +21,12 @@ nav.nav-el {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: $nav-width;
+    cursor: pointer;
+    border: 1px solid $accentBlueLight;
 
     p {
-      color: $accentLight;
+      color: $accentBlueLight;
       font-weight: 700;
     }
   }

@@ -1,0 +1,24 @@
+<section id="skills" class="content-page">
+  <h2>Skills</h2>
+  <ul class="fadeIn">
+    <i id="skills" class="devicon-amazonwebservices-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-atom-original-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-html5-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-css3-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-sass-original colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-bootstrap-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-git-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-javascript-plain colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-jquery-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-python-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-django-plain colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-postgresql-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-rails-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-ruby-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-react-original-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-heroku-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-babel-plain colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-slack-plain-wordmark colored devicon fadeIn"></i>
+    <i id="skills" class="devicon-webpack-plain-wordmark colored devicon fadeIn"></i>
+  </ul>
+</section>

@@ -1,6 +1,6 @@
 div.button {
   border: 3px solid;
-  border-color: $accentDark;
+  border-color: $accentBlueDark;
   border-radius: 12px;
   padding: 10px;
   max-width: $btn-width;
@@ -25,7 +25,7 @@ div.button {
     display: block;
     @include size(0, 0);
     border-radius: 50%;
-    background-color: $accentDark;
+    background-color: $accentBlueDark;
     transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -41,7 +41,7 @@ div.button {
   }
 
   &:active {
-    background: $accentDark;
+    background: $accentBlueDark;
   }
 
 }

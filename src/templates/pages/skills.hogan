@@ -1,5 +1,5 @@
 <section id="skills" class="content-page">
-  <h2>Skills</h2>
+  <h1>Skills</h1>
   <ul class="fadeIn">
     <i id="skills" class="devicon-amazonwebservices-plain-wordmark colored devicon fadeIn"></i>
     <i id="skills" class="devicon-atom-original-wordmark colored devicon fadeIn"></i>

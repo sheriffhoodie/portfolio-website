@@ -11,6 +11,7 @@ div.button {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: border-color 0.3s linear 0.3s;
 
   p {
     font-weight: 700;
@@ -33,7 +34,7 @@ div.button {
 
   &:hover {
     color: $fontPrimary;
-    // border: 2px solid $fontPrimary;
+    border-color: $fontPrimary;
 
     span {
       @include size(225%, $btn-width*2.25);

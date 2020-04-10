@@ -31,4 +31,33 @@ nav.nav-el {
       font-weight: 700;
     }
   }
+
+  #social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+
+    a {
+      width: 35%;
+      transition: 0.65s ease-in-out;
+      svg {
+        width: 100%;
+        cursor: pointer;
+        max-height: 40px;
+        margin: 10px 0;
+      }
+
+      span.label {
+        display: none;
+      }
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
 }

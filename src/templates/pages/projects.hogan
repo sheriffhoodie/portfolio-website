@@ -1,5 +1,5 @@
 <section id="projects" class="content-page">
-  <h2>My Projects</h2>
+  <h1>My Projects</h1>
   <div class="row">
     <article class="6u 12u$(xsmall) work-item">
       <a href="https://bandom.herokuapp.com/#/" target="_blank" class="image fit thumb"><img src="assets/images/bandom-screenshot.png" alt="" /></a>

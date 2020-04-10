@@ -3,7 +3,7 @@ div.button {
   border-color: $accentBlueDark;
   border-radius: 12px;
   padding: 10px;
-  max-width: $btn-width;
+  min-width: $btn-width;
   display: flex;
   justify-content: center;
   align-items: center;

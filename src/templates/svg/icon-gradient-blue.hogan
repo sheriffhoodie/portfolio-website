@@ -1,0 +1,6 @@
+<defs>
+  <linearGradient id="gradient1" x1="80%" y1="30%" x2="80%" y2="100%">
+    <stop offset="0%" stop-color="#0176a7" />
+    <stop offset="100%" stop-color="#5beaee" />
+  </linearGradient>
+</defs>

@@ -8,7 +8,7 @@ nav.nav-el {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 200px 0;
+  padding: 275px 0;
 
   .nav-logo {
     width: 100%;
@@ -24,11 +24,17 @@ nav.nav-el {
     align-items: center;
     height: $nav-width;
     cursor: pointer;
-    border: 1px solid $accentBlueLight;
 
     p {
       color: $accentBlueLight;
       font-weight: 700;
+      opacity: 0;
+      display: none;
+    }
+
+    svg {
+      width: 50%;
+      max-height: 100%;
     }
   }
 
@@ -42,7 +48,7 @@ nav.nav-el {
     padding-bottom: 15px;
 
     a {
-      width: 35%;
+      width: 30%;
       transition: 0.65s ease-in-out;
       svg {
         width: 100%;

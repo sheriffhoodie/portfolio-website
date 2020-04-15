@@ -25,10 +25,7 @@ function animateButton(ctx, event) {
   gsap.to(btnSpan, { duration: 0.1, top: relY, left: relX });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  // rotateGreeting();
-
-  // Apply Event Listeners for Button Animations
+function addButtonListeners() {
   var BUTTONS = document.querySelectorAll('.button');
 
   for (var i = 0; i < BUTTONS.length; i++) {
@@ -41,6 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
       animateButton(this, e);
     });
   }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // rotateGreeting();
+
+  // Apply Event Listeners for Various Animations
+  addButtonListeners();
+
 });
 
 var tl = gsap.timeline({paused: true});

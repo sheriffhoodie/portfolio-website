@@ -2,7 +2,7 @@ nav.nav-el {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 85px;
   border-right: 2px solid $fontPrimary;
   height: 100%;
   display: flex;
@@ -24,17 +24,30 @@ nav.nav-el {
     align-items: center;
     height: $nav-width;
     cursor: pointer;
+    position: relative;
 
-    p {
-      color: $accentBlueLight;
+    &:hover {
+      svg {
+        filter: blur(4px);
+      }
+
+      p.nav-icon-label {
+        opacity: 1;
+      }
+    }
+
+    p.nav-icon-label {
+      color: $accentGreenLight;
       font-weight: 700;
       opacity: 0;
-      display: none;
+      position: absolute;
+      transition: 0.3s ease-in-out 0.1s;
     }
 
     svg {
       width: 50%;
       max-height: 100%;
+      transition: 0.5s ease-out;
     }
   }
 

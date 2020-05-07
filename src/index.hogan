@@ -28,6 +28,8 @@
 		<!-- Footer -->
 		{{> ./templates/footer }}
 
+		<div class="wipe"></div>
+
 	</div>
 
 	<!-- Scripts -->

@@ -16,6 +16,14 @@ function rotateGreeting() {
   }, 1500);
 }
 
+function animateWipe() {
+  console.log('animate wipe');
+  var tl = gsap.timeline({onComplete: reverse});
+  tl.fromTo('.wipe', {}, {duration: 1.2, transform: 'scale(2.01) rotate(-45deg) translateX(180vh)', ease: Power0.easeNone})
+  .to('.wipe', {})
+
+}
+
 function animateButton(ctx, event) {
   var btnSpan = ctx.querySelector('span');
 
@@ -47,6 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
   addButtonListeners();
 
 });
-
-var tl = gsap.timeline({paused: true});
-console.log(tl);

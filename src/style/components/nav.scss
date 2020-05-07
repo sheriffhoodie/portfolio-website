@@ -9,6 +9,8 @@ nav.nav-el {
   flex-direction: column;
   justify-content: space-around;
   padding: 275px 0;
+  background: $primary;
+  z-index: 110;
 
   .nav-logo {
     width: 100%;

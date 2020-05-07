@@ -1,0 +1,10 @@
+.wipe {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  bottom: -100vh;
+  left: -100vh;
+  transform: rotate(-45deg) scale(2);
+  background: $accentGreenLight;
+  z-index: 100;
+}

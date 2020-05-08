@@ -1,13 +1,15 @@
 <section id="contact" class="content-page">
+
   <h1>Contact Me</h1>
-  <p class="credits">
-    Credits: Icons made by:
-    <ul>
-      <li><a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank" title="Pixel perfect">Pixel perfect</a></li>
-      <li><a href="https://www.flaticon.com/authors/gregor-cresnar" target="_blank" title="Gregor Cresnar">Gregor Cresnar</a></li>
-      <li><a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></li>
-      <li><a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a></li>
-    </ul>
-    from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a>
-  </p>
+  <p class="credits">Credits: Icons made by:</p>
+
+  <ul>
+    <li><a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank" title="Pixel perfect">Pixel perfect</a></li>
+    <li><a href="https://www.flaticon.com/authors/gregor-cresnar" target="_blank" title="Gregor Cresnar">Gregor Cresnar</a></li>
+    <li><a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></li>
+    <li><a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a></li>
+  </ul>
+
+  <p>from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a></p>
+  
 </section>

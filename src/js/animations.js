@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+  contentPageTL.to('.active', {opacity: 0.6, duration: 1.2, transform: 'scale(1.05)', delay: 0.3})
+    .to('.active', {duration: 0.5, opacity: 1, transform: 'scale(1)', ease: Power2.easeInOut}, '-=0.3');
+  // rotateGreeting();
+
+  // Apply Event Listeners for Various Animations
+  addButtonListeners();
+
+});
+
 const GREETINGS = [
   'Bonjour!',
   'Buongiorno!',
@@ -8,6 +18,8 @@ const GREETINGS = [
   'Hi!'
 ]
 
+var contentPageTL = gsap.timeline();
+
 function rotateGreeting() {
   var i = 0;
   setInterval(function() {
@@ -16,11 +28,20 @@ function rotateGreeting() {
   }, 1500);
 }
 
-function animateWipe() {
-  console.log('animate wipe');
-  var tl = gsap.timeline({onComplete: reverse});
-  tl.fromTo('.wipe', {}, {duration: 1.2, transform: 'scale(2.01) rotate(-45deg) translateX(180vh)', ease: Power0.easeNone})
-  .to('.wipe', {})
+function fireTransition(oldPage, newPage) {
+
+  gsap.to(oldPage, {opacity: 0, ease: Power2.easeIn, duration: 0.3, onComplete: onExitComplete});
+
+  function onExitComplete() {
+    deactivate(currentPage);
+    activate(newPage);
+  }
+
+  contentPageTL.fromTo(newPage, {opacity: 0, transform: 'scale(0.9)'}, {opacity: 0.6, duration: 1.2, transform: 'scale(1.05)', delay: 0.5})
+    .to(newPage, {duration: 0.5, opacity: 1, transform: 'scale(1)', ease: Power2.easeInOut}, '-=0.3');
+
+  var wipeTL = gsap.timeline();
+  wipeTL.fromTo('.wipe', {left: '-100vh', transform: 'scale(2) rotate(-45deg)'}, {duration: 1.2, transform: 'scale(2.01) rotate(-45deg) translateX(180vh)', ease: Power0.easeNone});
 
 }
 
@@ -32,26 +53,3 @@ function animateButton(ctx, event) {
 
   gsap.to(btnSpan, { duration: 0.1, top: relY, left: relX });
 }
-
-function addButtonListeners() {
-  var BUTTONS = document.querySelectorAll('.button');
-
-  for (var i = 0; i < BUTTONS.length; i++) {
-
-    BUTTONS[i].addEventListener('mouseenter', function(e) {
-      animateButton(this, e);
-    });
-
-    BUTTONS[i].addEventListener('mouseleave', function(e) {
-      animateButton(this, e);
-    });
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  // rotateGreeting();
-
-  // Apply Event Listeners for Various Animations
-  addButtonListeners();
-
-});

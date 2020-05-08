@@ -10,10 +10,7 @@ for (var i = 0; i < navLinks.length; i++) {
     pageMatch = contentPagesArray.filter(page => page.id === this.dataset.link)[0];
     currentPage = document.querySelector('.content-page.active');
 
-    deactivate(currentPage);
-    activate(pageMatch);
-
-    animateWipe();
+    fireTransition(currentPage, pageMatch);
 
   });
 }

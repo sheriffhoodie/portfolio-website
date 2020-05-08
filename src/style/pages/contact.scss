@@ -1,9 +1,13 @@
 #contact {
+  align-items: flex-start;
+
+  a {
+    color: $accentBlueLight;
+    text-decoration: underline;
+  }
+
   p.credits {
     font-size: 13px;
 
-    a {
-      text-decoration: underline;
-    }
   }
 }

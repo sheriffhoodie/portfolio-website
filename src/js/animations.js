@@ -15,6 +15,7 @@ const GREETINGS = [
   '안녕하세요!',
   'Guten Tag!',
   'こんにちは!',
+  'Hujambo',
   'Hi!'
 ]
 
@@ -41,8 +42,23 @@ function fireTransition(oldPage, newPage) {
     .to(newPage, {duration: 0.5, opacity: 1, transform: 'scale(1)', ease: Power2.easeInOut}, '-=0.3');
 
   var wipeTL = gsap.timeline();
-  wipeTL.fromTo('.wipe', {left: '-100vh', transform: 'scale(2) rotate(-45deg)'}, {duration: 1.2, transform: 'scale(2.01) rotate(-45deg) translateX(180vh)', ease: Power0.easeNone});
+  wipeTL.fromTo('.wipe', {left: '-100vw', transform: 'rotate(-45deg)'}, {duration: 1.5, transform: 'rotate(-45deg) translateX(100vw)', ease: Power1.easeOut});
 
+}
+
+function addButtonListeners() {
+  var BUTTONS = document.querySelectorAll('.button');
+
+  for (var i = 0; i < BUTTONS.length; i++) {
+
+    BUTTONS[i].addEventListener('mouseenter', function(e) {
+      animateButton(this, e);
+    });
+
+    BUTTONS[i].addEventListener('mouseleave', function(e) {
+      animateButton(this, e);
+    });
+  }
 }
 
 function animateButton(ctx, event) {

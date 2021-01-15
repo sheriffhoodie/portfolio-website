@@ -2,3 +2,13 @@
   width: $width;
   height: $height;
 }
+
+@mixin gradient-bg {
+  background: linear-gradient(to right, $accentBlueDark 35%, $accentGreenHeavy);
+}
+
+@mixin gradient-border {
+  background-image: linear-gradient($primary, $primary), linear-gradient(to right, $accentBlueDark, $accentGreenHeavy);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}

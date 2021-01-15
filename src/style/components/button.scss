@@ -1,6 +1,7 @@
 div.button {
-  border: 3px solid;
-  border-color: $accentBlueDark;
+  border: double 3px transparent;
+  @include gradient-border;
+  // border-color: $accentBlueDark;
   border-radius: 12px;
   padding: 10px;
   min-width: $btn-width;
@@ -26,7 +27,7 @@ div.button {
     display: block;
     @include size(0, 0);
     border-radius: 50%;
-    background-color: $accentBlueDark;
+    @include gradient-bg;
     transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
     transform: translate(-50%, -50%);
     z-index: 0;

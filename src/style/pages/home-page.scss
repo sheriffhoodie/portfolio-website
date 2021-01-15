@@ -6,4 +6,55 @@
     width: 500px;
     height: 682px;
   }
+
+  .js-guitar-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50%;
+
+    p {
+      text-align: center;
+    }
+
+    .chord-select {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 72%;
+      margin: 40px 0;
+
+      .sel-chord-display {
+        min-width: 50%;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      #chord-change {
+        width: 150px;
+        margin: 0;
+      }
+    }
+
+    .strings-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      height: 460px;
+      width: 240px;
+
+      .string {
+        width: 4px;
+        height: 100%;
+        background: white;
+
+        &[data-note="muted"] {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+
 }

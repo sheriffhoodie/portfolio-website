@@ -1,4 +1,27 @@
 <section id="home-page" class="content-page active">
-  <h1><span class="language-toggle">Hi!</span> I'm Max.</h1>
-  <img src="assets/images/home-logo.png" class="home-logo" alt="MC Logo">
+  <h1><span class="language-toggle">Hi!</span> I'm <span class="gradient-text">Max</span>.</h1>
+  <!-- <img src="assets/images/home-logo.png" class="home-logo" alt="MC Logo"> -->
+
+<div class="js-guitar-module">
+  <h3>The JS Guitar</h3>
+  <p>Made from just vanilla JS and the notes of my own guitar.<br/> Drag mouse across the strings to strum.</p>
+
+  <div class="chord-select">
+    <div class="sel-chord-display">
+      <h3></h3>
+    </div>
+    <div class="button" id="chord-change">
+      <p>Change</p><span></span>
+    </div>
+  </div>
+
+  <div class="strings-wrapper">
+    <div class="string" data-note=""></div>
+    <div class="string" data-note=""></div>
+    <div class="string" data-note=""></div>
+    <div class="string" data-note=""></div>
+    <div class="string" data-note=""></div>
+    <div class="string" data-note=""></div>
+  </div>
+</div>
 </section>
